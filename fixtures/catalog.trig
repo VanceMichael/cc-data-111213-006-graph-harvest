@@ -1,0 +1,5 @@
+@prefix ex: <https://lab.invalid/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+ex:instruments { ex:A ex:certificate _:b0 . _:b0 ex:label "检定"@zh ; ex:year "2026"^^xsd:integer . }
+ex:staff { ex:B ex:certificate _:b0 . }
+ex:A ex:name "光谱仪" .

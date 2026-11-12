@@ -1,0 +1,20 @@
+{
+  "name": "graph-harvest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1",
+    "start": "node src/cli.js",
+    "acceptance": "node src/cli.js demo",
+    "demo": "node src/cli.js demo",
+    "fixtures": "node scripts/create-fixtures.js",
+    "check": "node --check src/cli.js && node --check src/domain.js"
+  },
+  "dependencies": {
+    "n3": "1.26.0"
+  }
+}

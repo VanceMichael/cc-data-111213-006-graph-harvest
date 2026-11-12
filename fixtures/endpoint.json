@@ -1,0 +1,16 @@
+{
+  "endpoints": [
+    {
+      "id": "graph-export",
+      "exportGraph": true,
+      "stableBlankLabels": false
+    },
+    {
+      "id": "limited-table",
+      "exportGraph": false,
+      "maxRows": 2,
+      "stableBlankLabels": false
+    }
+  ],
+  "symmetricGraphSize": 8
+}
