@@ -12,7 +12,7 @@
     "acceptance": "node src/cli.js demo",
     "demo": "node src/cli.js demo",
     "fixtures": "node scripts/create-fixtures.js",
-    "check": "node --check src/cli.js && node --check src/domain.js"
+    "check": "node --check src/cli.js && node --check src/domain.js && node --check src/archive.js && for f in src/rdf/*.js src/harvest/*.js src/diff/*.js src/endpoints/*.js; do node --check \"$f\" || exit 1; done"
   },
   "dependencies": {
     "n3": "1.26.0"
